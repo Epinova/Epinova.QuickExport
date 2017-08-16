@@ -60,8 +60,7 @@ namespace Epinova.QuickExport.Controllers
                         exporter.ExportPropertySettings = false;
                         exporter.IncludeImplicitContentDependencies = true;
                         exporter.IncludeImplicitContentTypeDependencies = false;
-                        exporter.Stream = fileStream;
-                        exporter.Export(options);
+                        exporter.Export(fileStream, options);
                         exporter.Close();
 
                         Session["export" + id] = tempFileName;
