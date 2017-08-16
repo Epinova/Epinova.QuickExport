@@ -18,7 +18,7 @@
     <epinovaquickexport>
       <widget>
         <button>
-          <label>Exportt</label>
+          <label>Export</label>
           <tooltip>Export this node and its children</tooltip>
         </button>
         <errors>
