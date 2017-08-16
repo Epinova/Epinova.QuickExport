@@ -1,0 +1,11 @@
+﻿<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <episerver.shell>
+    <protectedModules rootPath="~/EPiServer/" >
+      <add name="QuickExport" xdt:Locator="Match(name)" xdt:Transform="InsertIfMissing">
+        <assemblies>
+          <add assembly="Epinova.QuickExport" xdt:Locator="Match(assembly)" xdt:Transform="InsertIfMissing" />
+        </assemblies>
+      </add>
+    </protectedModules>
+  </episerver.shell>
+</configuration>

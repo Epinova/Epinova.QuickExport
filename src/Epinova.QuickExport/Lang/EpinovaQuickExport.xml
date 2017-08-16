@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language id="no" name="Norsk">
+    <epinovaquickexport>
+      <widget>
+        <button>
+          <label>Eksporter</label>
+          <tooltip>Eksporter denne noden og dens undersider</tooltip>
+        </button>
+        <errors>
+          <generic>Det oppstod en feil</generic>
+          <download>Det oppstod en feil</download>
+        </errors>
+      </widget>
+    </epinovaquickexport>
+  </language>
+  <language id="en" name="English">
+    <epinovaquickexport>
+      <widget>
+        <button>
+          <label>Exportt</label>
+          <tooltip>Export this node and its children</tooltip>
+        </button>
+        <errors>
+          <generic>An error occured</generic>
+          <download>An error occured</download>
+        </errors>
+      </widget>
+    </epinovaquickexport>
+  </language>
+</languages>

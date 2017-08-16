@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>Epinova Quick Export</title>
+    <authors>Espen Lønnkvist</authors>
+    <owners>Epinova AS</owners>
+    <iconUrl>http://www.epinova.no/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Enables quick export from the pagetree</description>
+    <releaseNotes></releaseNotes>
+    <projectUrl>https://github.com/Epinova/Epinova.QuickExport</projectUrl>
+    <copyright>Copyright 2017 - Epinova AS</copyright>
+    <tags>Epinova EPiServer Export</tags>
+    <dependencies>
+      <dependency id="Castle.Core" version="[3.3.1, 4.0)" />
+      <dependency id="EPiServer.CMS.Core" version="[10.1, 11)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Web.config.install.xdt" target="content" />
+    <file src="Web.config.uninstall.xdt" target="content" />
+  </files>
+</package>
