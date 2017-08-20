@@ -126,6 +126,10 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="Epinova.QuickExport.nuspec" />
+    <None Include="modules\_protected\QuickExport\1.0.0.0\ClientResources\Scripts\ExportCommand.js" />
+    <None Include="modules\_protected\QuickExport\1.0.0.0\ClientResources\Scripts\ImportCommand.js" />
+    <None Include="modules\_protected\QuickExport\1.0.0.0\ClientResources\Scripts\init.js" />
+    <None Include="modules\_protected\QuickExport\module.config" />
     <Content Include="modules\_protected\QuickExport\QuickExport.zip" />
     <None Include="packages.config" />
     <None Include="Web.config.install.xdt" />
@@ -137,4 +141,9 @@
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Release" (
+  $(SolutionDir)tools\7za a -r -bd -y -tzip "$(ProjectDir)modules\_protected\QuickExport\QuickExport.zip" "$(ProjectDir)modules\_protected\QuickExport\*.js" "$(ProjectDir)modules\_protected\QuickExport\*.config" 
+)</PostBuildEvent>
+  </PropertyGroup>
 </Project>
