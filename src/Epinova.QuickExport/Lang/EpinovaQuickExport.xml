@@ -1,29 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <languages>
-  <language id="no" name="Norsk">
+  <language id="en" name="English">
     <epinovaquickexport>
       <widget>
-        <button>
-          <label>Eksporter</label>
-          <tooltip>Eksporter denne noden og dens undersider</tooltip>
-        </button>
+        <import>
+          <button>
+            <label>Import</label>
+            <tooltip>Import content into this node</tooltip>
+          </button>
+          <dialog>
+            <title>Import</title>
+            <heading>Import</heading>
+            <description>Choose exported package to import</description>
+            <choosefile>Choose file</choosefile>
+            <close>Close</close>
+          </dialog>
+        </import>
+        <export>
+          <button>
+            <label>Export</label>
+            <tooltip>Export this node and its children</tooltip>
+          </button>
+          <dialog>
+            <title>Export</title>
+            <heading>Export complete</heading>
+            <description>Save the file ExportedFile.episerverdata</description>
+          </dialog>
+        </export>
         <errors>
-          <generic>Det oppstod en feil</generic>
-          <download>Det oppstod en feil</download>
+          <error>Error</error>
+          <generic>An error occured</generic>
+          <download>An error occured</download>
+          <upload>An error occured</upload>
+          <suggest>Please try again or contact your partner for assistance</suggest>
         </errors>
       </widget>
     </epinovaquickexport>
   </language>
-  <language id="en" name="English">
+  <language id="no" name="Norsk">
     <epinovaquickexport>
       <widget>
-        <button>
-          <label>Export</label>
-          <tooltip>Export this node and its children</tooltip>
-        </button>
+        <import>
+          <button>
+            <label>Importer</label>
+            <tooltip>Importer innhold til denne noden</tooltip>
+          </button>
+          <dialog>
+            <title>Importer</title>
+            <heading>Importer</heading>
+            <description>Velg filer(er) som skal importeres</description>
+            <choosefile>Velg fil</choosefile>
+            <close>Lukk</close>
+          </dialog>
+        </import>
+        <export>
+          <button>
+            <label>Eksporter</label>
+            <tooltip>Eksporter denne noden og dens undersider</tooltip>
+          </button>
+          <dialog>
+            <title>Eksporter</title>
+            <heading>Eksport fullført</heading>
+            <description>Lagre filen ExportedFile.episerverdata</description>
+          </dialog>
+        </export>
         <errors>
-          <generic>An error occured</generic>
-          <download>An error occured</download>
+          <error>Feil</error>
+          <generic>Det oppstod en feil</generic>
+          <download>Det oppstod en feil</download>
+          <upload>Det oppstod en feil</upload>
+          <suggest>Vennligst prøv på nytt eller kontakt din leverandør for hjelp</suggest>
         </errors>
       </widget>
     </epinovaquickexport>
