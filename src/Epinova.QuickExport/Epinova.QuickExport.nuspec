@@ -8,14 +8,13 @@
     <owners>Epinova AS</owners>
     <iconUrl>http://www.epinova.no/favicon.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Enables quick export from the pagetree</description>
+    <description>Enables quick export/import from the pagetree</description>
     <releaseNotes></releaseNotes>
     <projectUrl>https://github.com/Epinova/Epinova.QuickExport</projectUrl>
     <copyright>Copyright 2017 - Epinova AS</copyright>
     <tags>Epinova EPiServer Export</tags>
     <dependencies>
-      <dependency id="Castle.Core" version="[3.3.1, 4.0)" />
-      <dependency id="EPiServer.CMS.Core" version="[10.1, 11)" />
+      <dependency id="EPiServer.CMS.UI.Core" version="[10.0.2, 11)" />
     </dependencies>
   </metadata>
   <files>
