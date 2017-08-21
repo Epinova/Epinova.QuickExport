@@ -60,8 +60,6 @@ namespace Epinova.QuickExport.Controllers
             var options = new ImportOptions
             {
                 KeepIdentity = false,
-                //ValidateDestination = true,
-                //EnsureContentNameUniqueness = true
             };
 
             ContentReference destination = new ContentReference(id);
