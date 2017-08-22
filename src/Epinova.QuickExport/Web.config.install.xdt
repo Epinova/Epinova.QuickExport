@@ -8,4 +8,9 @@
       </add>
     </protectedModules>
   </episerver.shell>
+  <location path="QuickExport" xdt:Locator="Match(path)" xdt:Transform="InsertIfMissing">
+    <system.web>
+      <httpRuntime maxRequestLength="1000000" requestValidationMode="2.0" />
+    </system.web>
+  </location>
 </configuration>
