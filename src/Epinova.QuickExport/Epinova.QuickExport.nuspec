@@ -14,7 +14,7 @@
     <copyright>Copyright 2017 - Epinova AS</copyright>
     <tags>Epinova EPiServer Export</tags>
     <dependencies>
-      <dependency id="EPiServer.CMS.UI.Core" version="[10.0.2, 11)" />
+      <dependency id="EPiServer.CMS.UI.Core" version="[11.1, 12)" />
     </dependencies>
   </metadata>
   <files>
