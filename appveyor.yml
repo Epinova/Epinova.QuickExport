@@ -10,7 +10,7 @@ assembly_info:
   file: '**\AssemblyInfo.*'
   assembly_version: '{version}'
   assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
+  assembly_informational_version: '{version} $(APPVEYOR_REPO_COMMIT)'
 nuget:
   project_feed: true
 before_build:
