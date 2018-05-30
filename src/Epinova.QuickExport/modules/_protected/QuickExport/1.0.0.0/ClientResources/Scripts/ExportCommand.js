@@ -32,15 +32,15 @@
                         window.location = '/QuickExport/Download?id=' + data.id;
                     } else {
                         new Alert({
-                            title: translator.export.dialog.title,
-                            heading: translator.errors.generic
+                            heading: translator.errors.download,
+                            description: translator.errors.suggest
                         }).show();
                     }
                 },
                 error: function (error) {
                     new Alert({
-                        title: translator.export.dialog.title,
-                        heading: translator.errors.download + ': ' + error
+                        heading: translator.errors.download + ': ' + error,
+                        description: translator.errors.suggest
                     }).show();
                 }
             });

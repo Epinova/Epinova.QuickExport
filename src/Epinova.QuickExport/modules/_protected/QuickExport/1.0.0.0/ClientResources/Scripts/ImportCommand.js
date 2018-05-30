@@ -37,7 +37,6 @@
             uploader.uploaderInput.uploadUrl = '/QuickExport/Upload?id=' + target;
 
             var dialog = new Alert({
-                title: translator.import.dialog.title,
                 heading: translator.import.dialog.heading,
                 description: translator.import.dialog.description,
                 acknowledgeActionText: translator.import.dialog.close,
