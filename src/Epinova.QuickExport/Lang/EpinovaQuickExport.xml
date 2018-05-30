@@ -9,7 +9,6 @@
             <tooltip>Import content into this node</tooltip>
           </button>
           <dialog>
-            <title>Import</title>
             <heading>Import</heading>
             <description>Choose exported package to import</description>
             <choosefile>Choose file</choosefile>
@@ -22,7 +21,6 @@
             <tooltip>Export this node and its children</tooltip>
           </button>
           <dialog>
-            <title>Export</title>
             <heading>Export complete</heading>
             <description>Save the file ExportedFile.episerverdata</description>
           </dialog>
@@ -46,7 +44,6 @@
             <tooltip>Importer innhold til denne noden</tooltip>
           </button>
           <dialog>
-            <title>Importer</title>
             <heading>Importer</heading>
             <description>Velg filer(er) som skal importeres</description>
             <choosefile>Velg fil</choosefile>
@@ -59,7 +56,6 @@
             <tooltip>Eksporter denne noden og dens undersider</tooltip>
           </button>
           <dialog>
-            <title>Eksporter</title>
             <heading>Eksport fullført</heading>
             <description>Lagre filen ExportedFile.episerverdata</description>
           </dialog>
