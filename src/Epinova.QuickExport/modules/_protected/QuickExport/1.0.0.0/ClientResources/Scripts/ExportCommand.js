@@ -19,13 +19,20 @@
         tooltip: translator.export.button.tooltip,
         iconClass: 'epi-iconDownload',
         canExecute: true,
+        timeout: 0,
+
+        constructor: function (timeout) {
+            this.timeout = timeout;
+        },
 
         _execute: function () {
+            var self = this;
+            
             dojo.rawXhrPost({
                 url: '/QuickExport/Export',
                 handleAs: 'json',
                 headers: { 'Content-Type': 'application/json' },
-                timeout: 60000,
+                timeout: self.timeout,
                 postData: dojo.toJson({ 'id': this.model.contentLink }),
                 load: function (data) {
                     if (!!data && !!data.success) {
