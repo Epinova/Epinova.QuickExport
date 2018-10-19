@@ -155,6 +155,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ViewModel.cs" />
+    <Compile Include="Module.cs" />
     <Compile Include="Initializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\QuickExportController.cs" />
@@ -166,6 +168,7 @@
     <None Include="modules\_protected\QuickExport\1.0.0.0\ClientResources\Scripts\ImportCommand.js" />
     <None Include="modules\_protected\QuickExport\1.0.0.0\ClientResources\Scripts\init.js" />
     <None Include="modules\_protected\QuickExport\module.config" />
+    <None Include="modules\_protected\QuickExport\1.0.0.0\ClientResources\Scripts\commandsProvider.js" />
     <Content Include="modules\_protected\QuickExport\QuickExport.zip" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
