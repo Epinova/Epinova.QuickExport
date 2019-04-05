@@ -37,7 +37,7 @@ cache:
 #  artifact: /.*\.nupkg/
 #  on:
 #    branch: /^release\/\d+$/
-#    APPVEYOR_REPO_BRANCH: /^release\/\d+$/
+#    APPVEYOR_REPO_BRANCH: /^release\/\d+\.\d+$/
 
 # here we are going to override common configuration
 for:
@@ -46,7 +46,7 @@ for:
 -
   branches:
     only:
-      - /^release\/\d+$/
+      - /^release\/\d+\.\d+$/
 
   before_build:
   - cmd: nuget restore
