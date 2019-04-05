@@ -7,7 +7,7 @@ environment:
   sonarcloudorg: epinova
   sonarcloudproj: Epinova_Epinova.QuickExport
   sonarcloudkey:
-    secure: 25f9fca7d00b9fb236714568b8f5ee6669d81819
+    secure: PQVMyoP3xreTQGkKg345+59hng1AnFhcUVvlow+zohFiBtAzz2p9htaY1JiF9tpF
 init:
 - cmd: nuget sources add -Name Episerver -Source http://nuget.episerver.com/feed/packages.svc/
 assembly_info:
