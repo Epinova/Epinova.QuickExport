@@ -21,9 +21,5 @@ namespace Epinova.QuickExport
         public void Uninitialize(InitializationEngine context)
         {
         }
-
-        public void Preload(string[] parameters)
-        {
-        }
     }
 }
