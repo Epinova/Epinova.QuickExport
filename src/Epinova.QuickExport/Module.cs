@@ -26,19 +26,21 @@ namespace Epinova.QuickExport
         {
             var viewModel = new ViewModel(this, clientResourceService);
 
-            if (!Int32.TryParse(WebConfigurationManager.AppSettings.Get("QuickExport:Timeout"), out int timeout))
+            if (!Int32.TryParse(GetAppSetting("QuickExport:Timeout"), out int timeout))
             {
                 timeout = defaultTimeout;
             }
 
             viewModel.Timeout = timeout;
 
-            var rolesConfig = WebConfigurationManager.AppSettings.Get("QuickExport:AllowedRoles");
+            var rolesConfig = GetAppSetting("QuickExport:AllowedRoles");
             var roles = String.IsNullOrEmpty(rolesConfig) ? defaultRoles : rolesConfig;
 
             viewModel.AllowedRoles.AddRange(roles.Split(','));
 
             return viewModel;
         }
+
+        internal Func<string, string> GetAppSetting = key => WebConfigurationManager.AppSettings.Get(key);
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epinova.QuickExport", "src\Epinova.QuickExport\Epinova.QuickExport.csproj", "{B0281478-54E9-479D-936E-832EFC0CBFE8}"
 EndProject
@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{3EEB6F
 		appveyor.yml = appveyor.yml
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epinova.QuickExport.Tests", "tests\Epinova.QuickExport.Tests\Epinova.QuickExport.Tests.csproj", "{745C2A34-49D1-4CAD-A448-908002ECA2C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,8 +24,15 @@ Global
 		{B0281478-54E9-479D-936E-832EFC0CBFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0281478-54E9-479D-936E-832EFC0CBFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0281478-54E9-479D-936E-832EFC0CBFE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{745C2A34-49D1-4CAD-A448-908002ECA2C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{745C2A34-49D1-4CAD-A448-908002ECA2C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{745C2A34-49D1-4CAD-A448-908002ECA2C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{745C2A34-49D1-4CAD-A448-908002ECA2C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C377485-3963-460A-8AF4-B7282BB3FFC4}
 	EndGlobalSection
 EndGlobal
