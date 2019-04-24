@@ -51,7 +51,7 @@ namespace Epinova.QuickExport.Controllers
             var files = GetValidFiles(Request.Files).ToArray();
 
             if (files.Length == 0)
-                throw new Exception("No valid files supplied");
+                throw new InvalidOperationException("No valid files supplied");
 
             List<UploadFileResult> results = new List<UploadFileResult>();
 
