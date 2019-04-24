@@ -20,6 +20,7 @@ namespace Epinova.QuickExport
 
         public void Uninitialize(InitializationEngine context)
         {
+            // N/A
         }
     }
 }
