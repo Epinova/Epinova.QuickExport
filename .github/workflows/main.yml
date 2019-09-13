@@ -13,11 +13,14 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     
-    - name: Setup MSBuild.exe
-      uses: warrenbuckley/Setup-MSBuild@v1
+    - name: Setup Nuget.exe
+      uses: warrenbuckley/Setup-Nuget@v1
       
     - name: Nuget restore
       run: nuget restore Epinova.QuickExport.sln
+      
+    - name: Setup MSBuild.exe
+      uses: warrenbuckley/Setup-MSBuild@v1
       
     - name: MSBuild
       run: msbuild Epinova.QuickExport.sln
