@@ -12,22 +12,19 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
-    
-    - name: Setup Nuget.exe
-      uses: warrenbuckley/Setup-Nuget@v1
-      
+    - uses: warrenbuckley/Setup-Nuget@v1
+    - uses: warrenbuckley/Setup-MSBuild@v1
+    - uses: actions/setup-dotnet@v1
+
+    - name: Trust dev-certs
+      run: dotnet dev-certs https --trust
+
     - name: Nuget restore
       run: nuget restore Epinova.QuickExport.sln
-      
-    - name: Setup MSBuild.exe
-      uses: warrenbuckley/Setup-MSBuild@v1
-      
+     
     - name: MSBuild
       run: msbuild Epinova.QuickExport.sln
 
-    - name: Setup .NET Core (for tests)
-      uses: actions/setup-dotnet@v1
-      run: dotnet dev-certs https --trust
     - name: Run tests
       run: dotnet test
       
