@@ -16,6 +16,8 @@ jobs:
     - name: Setup MSBuild.exe
       uses: warrenbuckley/Setup-MSBuild@v1
       
+    - name: Nuget restore
+      run: nuget restore Epinova.QuickExport.sln
+      
     - name: MSBuild
-      #working-directory: src
       run: msbuild Epinova.QuickExport.sln
