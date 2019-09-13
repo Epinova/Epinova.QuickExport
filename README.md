@@ -1,3 +1,6 @@
+<img src="https://github.com/Epinova/Epinova.QuickExport/workflows/CI/badge.svg" />
+
+
 # Epinova.QuickExport
 
 Provides a fast and easy way to export/import content directly from the page-tree in Episerver
