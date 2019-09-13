@@ -24,3 +24,11 @@ jobs:
       
     - name: MSBuild
       run: msbuild Epinova.QuickExport.sln
+
+    - name: Setup .NET Core (for tests)
+      uses: actions/setup-dotnet@v1
+
+    - name: Run tests
+      run: dotnet test
+      
+    
