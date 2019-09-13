@@ -20,7 +20,7 @@ jobs:
       run: nuget restore Epinova.QuickExport.sln
      
     - name: MSBuild
-      run: msbuild Epinova.QuickExport.sln
+      run: msbuild Epinova.QuickExport.sln -p:Configuration=Release
 
     - name: Run tests
       run: dotnet test
