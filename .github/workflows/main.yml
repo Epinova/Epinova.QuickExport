@@ -16,9 +16,6 @@ jobs:
     - uses: warrenbuckley/Setup-MSBuild@v1
     - uses: actions/setup-dotnet@v1
 
-    - name: Trust dev-certs
-      run: dotnet dev-certs https -t -q
-
     - name: Nuget restore
       run: nuget restore Epinova.QuickExport.sln
      
