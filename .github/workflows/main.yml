@@ -31,4 +31,4 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: nuget-package
-        path: *.nupkg
+        path: '*.nupkg'
