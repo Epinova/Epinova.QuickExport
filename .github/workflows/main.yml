@@ -1,4 +1,4 @@
-name: CI
+name: Release build
 
 on:
   push:
@@ -24,3 +24,11 @@ jobs:
 
     - name: Run tests
       run: dotnet test
+
+    - name: Nuget pack
+      run: nuget pack src/Epinova.QuickExport/Epinova.QuickExport.csproj -Properties Configuration=Release
+      
+    - uses: actions/upload-artifact@master
+      with:
+        name: nuget-package
+        path: src/*.nupkg
