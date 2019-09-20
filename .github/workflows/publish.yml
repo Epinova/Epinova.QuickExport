@@ -1,0 +1,26 @@
+name: Publish
+
+on:
+  push:
+#    tags:        
+#      - 'v*'
+    branches:
+    - release/*
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+#    - uses: actions/checkout@v1
+#    - uses: warrenbuckley/Setup-Nuget@v1
+#    - uses: warrenbuckley/Setup-MSBuild@v1
+#    - uses: actions/setup-dotnet@v1
+
+    - uses: actions/download-artifact@master
+      with:
+        name: nuget-package
+        path: dist
+
+    #- run: cat path/to/artifact
