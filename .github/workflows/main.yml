@@ -16,6 +16,19 @@ jobs:
     - uses: warrenbuckley/Setup-MSBuild@v1
     - uses: actions/setup-dotnet@v1
 
+    - name: Dump GitHub context
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
+      run: echo "$GITHUB_CONTEXT"
+    - name: Dump job context
+      env:
+        JOB_CONTEXT: ${{ toJson(job) }}
+      run: echo "$JOB_CONTEXT"
+    - name: Dump steps context
+      env:
+        STEPS_CONTEXT: ${{ toJson(steps) }}
+      run: echo "$STEPS_CONTEXT"
+
     - name: Nuget restore
       run: nuget restore Epinova.QuickExport.sln
      
