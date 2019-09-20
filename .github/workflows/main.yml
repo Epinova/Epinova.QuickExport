@@ -31,14 +31,18 @@ jobs:
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
       run: echo "$GITHUB_CONTEXT"
-    - name: Dump job context
-      env:
-        JOB_CONTEXT: ${{ toJson(job) }}
-      run: echo "$JOB_CONTEXT"
-    - name: Dump steps context
-      env:
-        STEPS_CONTEXT: ${{ toJson(steps) }}
-      run: echo "$STEPS_CONTEXT"
+#    - name: Dump job context
+#      env:
+#        JOB_CONTEXT: ${{ toJson(job) }}
+#      run: echo "$JOB_CONTEXT"
+#    - name: Dump steps context
+#      env:
+#        STEPS_CONTEXT: ${{ toJson(steps) }}
+#      run: echo "$STEPS_CONTEXT"
+
+    - name: Tag test
+      if: startsWith(github.ref, 'refs/tags/')
+      run: echo "omg a tag ${{ github.ref }}"
 
     - name: Nuget restore
       run: nuget restore Epinova.QuickExport.sln
