@@ -1,15 +1,21 @@
 name: Release build
 
-on:
-  push:
-    branches:    
-      - master         # Push events on master branch
-      - 'release/*'   # Push events to branches matching refs/heads/releases/*
+#on:
+#  push:
+#    branches:    
+#      - master         # Push events on master branch
+#      - 'release/*'   # Push events to branches matching refs/heads/releases/*
     # Sequence of patterns matched against refs/tags
-    tags:        
-      - v1             # Push events to v1 tag
-      - v1.0           # Push events to v1.0 tag
-      - 'test*'
+#    tags:        
+#      - v1             # Push events to v1 tag
+#      - v1.0           # Push events to v1.0 tag
+#      - 'test*'
+
+on:
+  push: 
+    branches: 
+      - refs/tags/*
+      
 jobs:
   build:
 
@@ -46,7 +52,3 @@ jobs:
     - name: Nuget pack
       run: nuget pack src/Epinova.QuickExport/Epinova.QuickExport.csproj -Properties Configuration=Release -OutputDirectory dist
       
-    - uses: actions/upload-artifact@master
-      with:
-        name: nuget-package
-        path: dist
