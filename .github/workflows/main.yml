@@ -26,9 +26,9 @@ jobs:
 #      run: dotnet test
 
     - name: Nuget pack
-      run: nuget pack src/Epinova.QuickExport/Epinova.QuickExport.csproj -Properties Configuration=Release
+      run: nuget pack src/Epinova.QuickExport/Epinova.QuickExport.csproj -Properties Configuration=Release -OutputDirectory dist
       
     - uses: actions/upload-artifact@master
       with:
         name: nuget-package
-        path: '*.nupkg'
+        path: dist
