@@ -13,8 +13,8 @@ name: Release build
 
 on:
   push: 
-    branches: 
-      - refs/tags/*
+    tags: 
+      - 'test*'
       
 jobs:
   build:
