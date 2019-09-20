@@ -2,11 +2,14 @@ name: Release build
 
 on:
   push:
-#    branches:
-#    - release/*
-    tags:
-    - test*
-    
+    branches:    
+      - master         # Push events on master branch
+      - 'release/*'   # Push events to branches matching refs/heads/releases/*
+    # Sequence of patterns matched against refs/tags
+    tags:        
+      - v1             # Push events to v1 tag
+      - v1.0           # Push events to v1.0 tag
+      - 'test*'
 jobs:
   build:
 
