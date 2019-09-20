@@ -22,8 +22,8 @@ jobs:
     - name: MSBuild
       run: msbuild Epinova.QuickExport.sln -p:Configuration=Release
 
-    - name: Run tests
-      run: dotnet test
+#    - name: Run tests
+#      run: dotnet test
 
     - name: Nuget pack
       run: nuget pack src/Epinova.QuickExport/Epinova.QuickExport.csproj -Properties Configuration=Release
@@ -31,4 +31,4 @@ jobs:
     - uses: actions/upload-artifact@master
       with:
         name: nuget-package
-        path: src/*.nupkg
+        path: *.nupkg
